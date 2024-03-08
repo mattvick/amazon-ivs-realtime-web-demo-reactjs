@@ -1,4 +1,5 @@
 "use client";
+
 // Importing the necessary dependencies for managing state and side effects in a React component
 import { useState, useEffect, useRef } from "react";
 import Script from "next/script";
@@ -121,7 +122,7 @@ export default function Home() {
   return (
     <div>
       <Script
-        src="https://web-broadcast.live-video.net/1.6.0/amazon-ivs-web-broadcast.js" // Load the Amazon IVS Web Broadcast JavaScript library
+        src="https://web-broadcast.live-video.net/1.9.0/amazon-ivs-web-broadcast.js" // Load the Amazon IVS Web Broadcast JavaScript library
         onLoad={initialize} // Call the 'initialize' function after the script has loaded
       ></Script>
       <Header />
